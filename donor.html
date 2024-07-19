@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<style>
+	body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #990000;
+			color: #fff;
+			padding: 20px;
+			text-align: left;
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		nav {
+			background-color: #333;
+			overflow: hidden;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		nav a {
+			float: left;
+			color: #fff;
+			text-align: center;
+			padding: 14px 20px;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			transition: background-color 0.3s ease;
+		}
+		nav a:hover {
+			background-color: #ddd;
+			color: #333;
+		}.container {
+	margin: 50px auto;
+	width: 80%;
+	max-width: 700px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+	margin-top: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+form label {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"],form input[type="date"],form input[type="tel"],form input[type="password"],select {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+form input[type="submit"] {
+	background-color: #dc3545;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: background-color 0.2s;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="5.jpg" class="logo" alt="photo" width="100" height="100">
+		Donor Registration
+	</header>
+	<nav>
+		<a href="Home.html" id="home">Home</a>
+		<a href="search.html" id="search">Search</a>
+		<a href="Registration.html" class="active" id="registration">Registration</a>
+		<a href="Contact.html" id="contact">Contact Us</a>
+	</nav>
+	<div class="container">
+		<h1>Donor Registration</h1>
+		<form action="donor_register.php" method="post">
+			<label for="fname">Full Name</label>
+			<input type="text" id="fname" name="fname" placeholder="Enter your full name">
+
+			<label for="date">Date Of Birth</label>
+			<input type="date" id="date" name="date" >
+
+            <label for="phone">Phone Number</label>
+			<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+			<label for="email">Email </label>
+			<input type="email" id="email" name="email" placeholder="Enter your email ">
+
+
+			<label for="city">City</label>
+			<select  name="city">
+				<option value='1' disabled = "disabled">select  your city</option>
+				<option value='Najran' selected="selected"> Najran</option>
+				<option value='Al-Jawf'>Al-Jawf</option>
+					<option value='Jeddah'>Jeddah</option>
+					<option value='Jazan'>Jazan</option>
+					<option value='Abha'>Abha</option>
+					<option value='Bisha'>Bisha</option>
+					<option value='Dhahran'>Dhahran</option>
+					<option value='Al-Bahah'>Al-Bahah</option>
+					<option value='Riyadh'>Riyadh</option>
+					<option value='Mecca'>Mecca</option>
+					<option value='Medina'>Medina</option>
+					<option value='Al-Qassim'>Al-Qassim</option>
+					<option value='Al-Kharj'>Al-Kharj</option>
+					<option value='Al-Aflaj'>Al-Aflaj</option>
+					<option value='Hail'>Hail</option>
+					<option value='Dammam'>Dammam</option>
+
+
+
+
+
+
+				</select>
+
+				<label for="btype">Donation Type</label>
+				<select  name="btype">
+							<option value='1' disabled = "disabled">select type</option>
+					<option value='blood' selected="selected"> blood </option>
+					<option value='Organs'>Organs</option>
+					
+						</select>
+
+
+				<label for="otype">Type of blood / organs</label>
+			<select name="otype">
+				 <option value='1' selected="selected" > No organs required</option>
+					  <option value='Liver'> Liver </option>
+					  <option value='Kidney'>Kidney</option>
+					  <option value='Heart'>Heart</option>
+					  <option value='Cornea'>Cornea</option>
+					  <option value='Lung'>Lung</option>
+					  </select>
+							  <div class="terms">
+								<input type="checkbox" name="con">
+								<label for="checkbox">Dispaly contact information in search page?</label>
+								</div><br>
+
+							  <input type="submit" value="Register">
+		</form>
+		
+	</div>
+
+</body>
+</html>
